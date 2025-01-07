@@ -1,0 +1,52 @@
+1. laravel reverb is a driver 
+2. install reverb using  -- php artisan install:broadcasting
+3. to publish the confirguration need to install reverb -- php artisan reverb:install
+4. https://reverb.laravel.com/#features  for laravel features
+
+
+Laravel echo 
+1. it is a js library that makes it painless to subscribe to channels and listen for events broadcast
+
+
+1. laravel auth ui package install -- composer require laravel/ui
+2. php artisan ui bootstrap --auth
+3. npm install && npm run dev
+4. create fake data using seed with factory
+5. php artisan migrate
+6. php artisan db:seed
+7. install livewire -composer require livewire/livewire
+8. publish the config folder --php artisan livewire:publish --config
+9. publish for assets folder -- php artisan livewire:publish --assets
+10. create livewire component -- php artisan make:livewire ChatComponent
+11. install reverb package using -- php artisan install:broadcasting
+12. start rever using -- php artisan reverb:start
+
+Note : By default, the Reverb server will be started at 0.0.0.0:8080, making it accessible from all network interfaces.
+
+If you need to specify a custom host or port, you may do so via the --host and --port options when starting the server:
+- php artisan reverb:start --host=127.0.0.1 --port=9000
+
+Note :  in a production environment, you may route requests from your public Reverb hostname on port 443 to a Reverb server operating on 0.0.0.0:8080.
+
+
+Note #[On('echo-private')]  :: here echo-private is use because of private channel
+
+
+BROADCASTING 
+1.  WebSockets are used to implement realtime, live-updating user interfaces.
+2. command : php artisan install:broadcasting
+3. this command will create broadcasting file in config folder 
+4. this command is also create channels file in route folder where we register our application
+
+Channels 
+1. private : which require authentication
+2. public : which don’t require any authentication
+3. presence : They also require authentication and have the ability to register client presence on the channel.
+
+
+chat module
+1. Logged in user able to see all users 
+2. logged in user able to see the user whom chat with 
+3. live chat will show on the screen after clicking on that 
+4. able to delete chat of self chat screen.
+
