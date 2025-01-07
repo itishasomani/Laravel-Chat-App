@@ -4,6 +4,14 @@ This app is useful for one to one chat.
 i have added three user in this one is admin and other two are user for testing. 
 All users are able to login with the provided credentials. 
 This app is built with Laravel backend and Laravel reverb package uses for chat. and in frontend i choose Livewire. to built a perfect chat web.
+======================================================================================
+
+to create .env file follow the below steps :
+1. cp .env.example .env
+2. php artisan key:generate
+3. php artisan optimize:clear
+
+======================================================================================
 
 Steps which need to follow for setup :
 ====================================================================
